@@ -1,0 +1,54 @@
+/**
+  @page RSA Encryption/Decryption Example
+  
+  @verbatim
+  ******************** (C) COPYRIGHT 2015 STMicroelectronics *******************
+  * @file     Examples_Crypto/rsa_enc_dec.txt
+  * @author  MCD Application Team
+  * @version V3.1.0
+  * @date    30-October-2015
+  * @brief   Description of the "RSA encryption/decryption" example.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; COPYRIGHT 2015 STMicroelectronics</center></h2>
+  *
+  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+  * You may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at:
+  *
+  *        http://www.st.com/software_license_agreement_liberty_v2
+  *
+  * Unless required by applicable law or agreed to in writing, software 
+  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  *
+  ******************************************************************************
+   @endverbatim
+
+@par Example Description
+This example describes how to use the STM32 Cryptographic Library RSA encryption/decryption 
+algorithm and the different steps to perform RSA Encryption/Decryption processes.
+
+This example is split into two parts:
+The first part is to: 
+1 - Encrypt DATA with RSA  
+
+RSA encryption algorithm routines can return RSA_SUCCESS in case of successful encryption 
+operations or one of the following error codes in case of fail:
+ 
+  - RSA_ERR_BAD_PARAMETER,
+  - RSA_ERR_MESSAGE_TOO_LONG,
+  - RSA_ERR_BAD_OPERATION.
+
+The second part is to:
+1 - Decrypt DATA in with RSA
+2 - Compare between the decrypted data and expected decrypted data
+
+RSA decryption algorithm routines can return RSA_SUCCESS in case of successful encryption 
+operations or RSA_ERR_GENERIC  in case of fail.
+
+ * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
+ */

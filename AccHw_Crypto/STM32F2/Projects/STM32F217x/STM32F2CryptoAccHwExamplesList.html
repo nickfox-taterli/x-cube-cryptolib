@@ -1,0 +1,282 @@
+<br><h1 style="margin-bottom: 0.25in; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana; color: rgb(51, 102, 255);">STM32F2 Crypto Hardware Acceleraion Examples</span></h1>
+<h1 style="margin-bottom: 0.25in; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana;"><o:p></o:p></span></h1>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;">Copyright&nbsp;2015
+STMicroelectronics</span></p><p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;"><img style="width: 171px; height: 126px;" alt="" src="../../_htmresc/st_logo.png"></span><br><span style="font-size: 10pt; font-family: Arial; color: black;"></span><span style="color: black;"><u1:p></u1:p><o:p></o:p></span></p>
+<span style="font-size: 10pt; font-family: Arial; color: black;"></span><span style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 13.3333px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; font-weight: bold;">STM32 Crypto hardware acceleration Library</span><span style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 13.3333px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; display: inline ! important; float: none;"><span class="Apple-converted-space">&nbsp;</span>provides a rich set of examples covering the main features of each cryptographic algorithm. All examples are available in source file format and provided with preconfigured project for the supported board. Expected output data are added in almost examples in order to check that the examples work correctly. Expected data are taken from cryptographic standard. Please refer to readme.txt in each example for more details about cryptographic standard used.<br><br><br></span><h2 style="margin: 12pt 0in 3pt; background: rgb(51, 102, 255) none repeat scroll 0% 50%; page-break-after: avoid; font-size: 14pt; font-family: Arial,sans-serif; font-weight: bold; font-style: italic; color: rgb(0, 0, 0); font-variant: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><span style="font-size: 12pt; color: white;">How to proceed?</span></h2><ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px;"><li><span style="font-size: 10pt; font-family: Symbol;"><span><span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal;"></span></span></span><span style="font-size: 10pt; font-family: Arial,sans-serif;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"></span><font size="-1"><span style="font-family: Verdana;">In order to make the example work, you have to do the following:</span></font><br></li></ul><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"></span><ul><ul><li style="font-family: Verdana;"><font size="-1"><span style="font-size: 10pt; color: black;">Open the example using your preferred toolchain</span></font></li></ul><ul><li style="font-family: Verdana;"><font size="-1">Rebuild all files and load the image into target memory</font></li></ul><ul><li><font size="-1"><span style="font-family: Verdana;">Run the example by following the readme.txt instructions <br></span></font></li></ul></ul><br><h2 style="margin: 12pt 0in 3pt; background: rgb(51, 102, 255) none repeat scroll 0% 50%; page-break-after: avoid; font-size: 14pt; font-family: Arial,sans-serif; font-weight: bold; font-style: italic; color: rgb(0, 0, 0); font-variant: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><span class="GramE"><span style="font-size: 12pt; color: white;">STM32 Cryptographic Library</span></span><span style="font-size: 12pt; color: white;">&nbsp;Examples</span></h2><p style="margin-right: 0in; margin-left: 0in; font-size: medium; font-family: 'Times New Roman',serif; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px;"><span style="font-size: 10pt; font-family: Arial,sans-serif;">The package contains the following examples:</span></p><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;"></span><ul></ul>
+		<table style="height: 1593px; background-color: rgb(240, 240, 255); width: 1353px; margin-left: 160px;" border="1">
+			<tbody><tr style="background-repeat: no-repeat; background-position: right center; background-color: rgb(57, 169, 220); color: rgb(255, 255, 255);" align="center">
+				
+				<td style="width: 214px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); height: 34px;" colspan="1" rowspan="2"><b>Cryptographic</b></td>
+				<td style="width: 320px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); height: 8px;" colspan="2" rowspan="1"><b>Examples</b></td>
+				
+				
+				
+				
+				
+				
+				
+				
+			</tr>
+      <tr align="center">
+        
+        
+        <td style="width: 320px; font-family: Verdana; color: rgb(26, 26, 26); text-align: center; font-weight: bold; background-color: rgb(51, 204, 255); vertical-align: middle; height: 34px;"><font size="-1"><span style="font-weight: bold;">Name</span></font><br></td>
+        <td colspan="1" rowspan="1" style="width: 866px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); background-color: rgb(51, 204, 255); height: 34px;"><font size="-1"><span style="font-weight: bold;">Bref decription</span><br></font></td>
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      
+      
+      
+      
+      <tr align="center">
+        <td rowspan="8" style="vertical-align: top;"><dl><dt><br></dt><dt><br></dt><dt><br></dt><dt><br></dt><dt><br></dt><dt><br></dt></dl><h2 style="font-family: Verdana; font-weight: normal;"><br></h2><h2 style="font-family: Verdana; font-weight: normal;"><br></h2><h2 style="font-family: Verdana; font-weight: normal;"><br></h2><h2 style="font-family: Verdana; font-weight: normal;"><br></h2><p style="font-family: Verdana; font-weight: bold;"><big><big>AES</big></big></p><dl><dt><br></dt></dl></td><td style="width: 320px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26);"><p id="SDIO">AES128_CFB</p></td>
+        <td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-128 in CFB&nbsp; mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-128 in CFB mode</td>
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      <tr><td style="width: 320px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26);">AES128_OFB</td><td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-128 in OFB&nbsp; mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-128 in OFB mode-<br></td></tr><tr align="center">
+        <td colspan="1" rowspan="1" style="width: 320px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26);"><p id="SPI">AES128_KEYWRAP</p></td>
+        <td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-128 in Keywrap mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-128 in Keywrap mode</td>
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      <tr style="font-family: Verdana; color: rgb(26, 26, 26);" align="center"></tr><tr><td style="text-align: center; font-family: Verdana;">AES256_XTS</td><td style="font-family: Arial; text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-256 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-256 in XTS&nbsp; mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-256 in XTS mode<br></td></tr><tr><td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26);">AES128_CMAC</td><td colspan="1" rowspan="1" style="font-family: Arial; color: rgb(26, 26, 26); width: 866px; text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-128 in CMAC mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-128 in CMAC mode<br></td></tr><tr><td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26);">AES128_CCM<br></td><td colspan="1" rowspan="1" style="font-family: Arial; color: rgb(26, 26, 26); width: 866px; text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-128 in CCM&nbsp; mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-128 in CCM&nbsp; mode<br></td></tr><tr><td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26);">AES128_GCM</td><td colspan="1" rowspan="1" style="font-family: Arial; color: rgb(26, 26, 26); width: 866px; text-align: left;">This example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br>&nbsp;&nbsp; - Encrypt DATA with AES-128 in GCM mode<br>&nbsp;&nbsp; - Decrypt DATA with AES-128 in GCM mode<br></td></tr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <tr align="center">
+        
+        <td rowspan="2" style="font-family: Verdana; text-align: center; color: rgb(26, 26, 26); width: 214px; background-color: rgb(204, 204, 204);"><big><span style="font-weight: bold;">ECC</span></big><br></td><td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); background-color: rgb(204, 204, 204);"><span style="font-size: 14.6667px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 14.7333px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; display: inline ! important; float: none;">KeyGen_Sign_Verify</span></td><td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); background-color: rgb(204, 204, 204); text-align: left;">This example describes how to use the STM32 Cryptographic Library ECC algorithm of an ECC key generation and signature verification with Parameters for Elliptic Curve: P-192, P-256 and P-384.</td>
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      <tr align="center">
+        <td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); background-color: rgb(204, 204, 204);"><span style="font-size: 14.6667px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 14.7333px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; display: inline ! important; float: none;">Sign_Verify</span></td><td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); background-color: rgb(204, 204, 204); text-align: left;">This example describes how to use the STM32&nbsp;&nbsp;&nbsp; Cryptographic Library ECC algorithm of an ECC signature&nbsp; verification with Parameters for Elliptic CurveP-192,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P-256 and P-384.</td>
+        
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      
+      
+      
+      
+      <tr align="center">
+        <td style="width: 214px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); height: 50px; font-weight: bold;" rowspan="1"><p id="DMA">POLY1305</p></td>
+        <td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); height: 50px;">GetMAC_VerifMAC<br></td>
+        <td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); height: 50px; text-align: left;">This example describes how to use the STM32 Cryptographic Library POLY1305 to Authenticate message</td>
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      
+      
+      
+      
+      
+      
+      <tr align="center">
+        <td style="width: 214px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); height: 25px; font-weight: bold; background-color: rgb(193, 193, 191);" rowspan="1"><p id="FLASH">RSA</p></td>
+        <td style="width: 298px; font-family: Verdana; text-align: center; color: rgb(26, 26, 26); height: 25px; background-color: rgb(193, 193, 191);"><p id="FLASH_DualBoot" title="This example guides you through the different configuration steps by mean of HAL APIhow to program bank1 and bank2 of the FLASH memory integrated within STM32F4xx devices and swap between both of them." style="cursor: help;">Enc_Dec</p></td>
+        <td colspan="1" rowspan="1" style="width: 866px; font-family: Arial; color: rgb(26, 26, 26); height: 25px; text-align: left; background-color: rgb(193, 193, 191);">This example describes how to use the STM32
+Cryptographic Library RSA algorithm to Encrypt and Decrypt DATA
+using RSA algorithm</td>
+        
+        
+        
+        
+        
+        
+        
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </tbody></table>
+
+	
